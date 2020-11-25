@@ -105,7 +105,7 @@ const App = () => (
     <ChatBot 
       headerTitle="Assistente virtual Rio Ben - Proteção Veicular"
       steps={steps} 
-      style={{width: '80vw', height: '700px', marginLeft: '10vw', marginTop: '5vh'}}
+      style={{width: '80vw', height: '550px', marginLeft: '10vw', marginTop: '5vh'}}
       botDelay={3000}
       botAvatar={require('./assets/avatar.png')}
     />
