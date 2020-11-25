@@ -106,7 +106,7 @@ const App = () => (
       headerTitle="Assistente virtual Rio Ben - Proteção Veicular"
       steps={steps} 
       style={{width: '90vw', height: '540px', marginLeft: '5vw', marginTop: '5vh'}}
-      botDelay={3000}
+      botDelay={4000}
       botAvatar={require('./assets/avatar.png')}
     />
   </ThemeProvider>
