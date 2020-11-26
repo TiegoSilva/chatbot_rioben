@@ -31,7 +31,7 @@ const Ctas = () => {
   return(
       <button 
         style={{backgroundColor: '#6a99b2', color: '#fff', padding: 12, borderRadius: 24, border: 'none'}} 
-        onClick={() => window.open('https://api.whatsapp.com/send?phone=552124211608&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20benef%C3%ADcio%20carro%20reserva.', '_self')}
+        onClick={() => window.open('https://api.whatsapp.com/send?phone=5521996877625&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20benef%C3%ADcio%20carro%20reserva.', '_self')}
       >
           Falar com atendente pelo WhatsApp!
       </button>
