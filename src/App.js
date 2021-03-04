@@ -31,7 +31,7 @@ const Ctas = () => {
   return(
       <button 
         style={{backgroundColor: '#6a99b2', color: '#fff', padding: 12, borderRadius: 24, border: 'none'}} 
-        onClick={() => window.open('https://api.whatsapp.com/send?phone=5521996877625&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20benef%C3%ADcio%proteção%20de%20vidros.', '_self')}
+        onClick={() => window.open('https://api.whatsapp.com/send?phone=5521996877625&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20benef%C3%ADcio%20proteção%20de%20vidros.', '_self')}
       >
           Falar com atendente pelo WhatsApp!
       </button>
