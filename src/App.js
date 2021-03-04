@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 
 //imagens
-import promotional_banner from './assets/promotional-image.png'
+import promotional_banner from './assets/promotional-banner.jpg'
 
 // all available props
 const theme = {
@@ -31,7 +31,7 @@ const Ctas = () => {
   return(
       <button 
         style={{backgroundColor: '#6a99b2', color: '#fff', padding: 12, borderRadius: 24, border: 'none'}} 
-        onClick={() => window.open('https://api.whatsapp.com/send?phone=5521996877625&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20benef%C3%ADcio%20carro%20reserva.', '_self')}
+        onClick={() => window.open('https://api.whatsapp.com/send?phone=5521996877625&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20benef%C3%ADcio%proteção%20de%20vidros.', '_self')}
       >
           Falar com atendente pelo WhatsApp!
       </button>
@@ -46,12 +46,12 @@ const steps = [
   },
   {
     id: '2',
-    message: 'Sabia que se você tiver um roubo, furto, colisão ou perda total(PT), você poderá NÃO ficar sem carro?',
+    message: 'Sabia que por um valor justo você pode adicionar um benefício na sua proteção veicular e que aqui temos uma solução que vai acabar com seus problemas em caso de algum evento com seus vidros, lentes dos retrovisores e lanternas?',
     trigger: '3'
   },
   {
     id: '3',
-    message: 'Então, vi aqui que você AINDA NÃO TEM O BENEFÍCIO DE CARRO RESERVA...',
+    message: 'Então, vi aqui que você AINDA NÃO TEM O BENEFÍCIO DE PROTEÇÃO DE VIDROS...',
     trigger: '4'
   },
   {
@@ -61,39 +61,35 @@ const steps = [
   },
   {
     id: '5',
-    message: 'E temos este benefício para você, que possui duas formas de contratação:',
+    message: 'E temos este benefício para você, em caso de quebra ou rachadura das seguintes peças: Faróis, lanternas, Lente do retrovisor, vidros laterais, Para-brisas a partir de R$ 13,99 ',
     trigger: '6'
   },
   {
     id: '6',
-    message: 'Carro reserva 15 dias ou 30 dias, onde você terá um veículo disponível nestes períodos.',
+    message: 'Os serviços de troca e/ou reparo dos vidros serão executados por empresas referenciadas em todo o Estado do Rio de Janeiro.',
     trigger: '7'
   },
   {
     id: '7',
-    message: 'Você com um carro novinho a sua disposição, com quilometragem livre, entrega e retirada de veículo delivery e a comodidade que só este beneficio lhe proporcionará; já pensou nisso? Uau será incrível!',
+    message: 'Gostou do benefício Cobertura para seus vidros? Caso você tenha interesse em saber mais ou contratar o benefício, clique no botão abaixo.',
     trigger: '8'
   },
+
   {
     id: '8',
-    message: 'Gostou do benefício Carro Reserva? Caso você tenha interesse em saber mais ou contratar o benefício, clique no botão abaixo.',
-    trigger: '9'
+    options: [
+      { value: 1, label: 'Quero contratar agora!', trigger: '9' },
+      { value: 2, label: 'Não, obrigado', trigger: '10' },
+    ],
+    trigger: '9',
   },
   {
     id: '9',
-    options: [
-      { value: 1, label: 'Quero contratar agora!', trigger: '10' },
-      { value: 2, label: 'Não, obrigado', trigger: '11' },
-    ],
-    trigger: '10',
-  },
-  {
-    id: '10',
     component: <Ctas />,
     end: true
   },
   {
-    id: '11',
+    id: '10',
     message: "Nós agradecemos a sua atenção. Caso queira entrar em contato conosco, ligue para (21)2421-1608",
     end: true
   },
@@ -105,8 +101,8 @@ const App = () => (
     <ChatBot 
       headerTitle="Assistente virtual Rio Ben - Proteção Veicular"
       steps={steps} 
-      style={{width: '90vw', height: '540px', marginLeft: '5vw', marginTop: '5vh'}}
-      botDelay={4000}
+      style={{width: '80vw', height: '700px', marginLeft: '10vw', marginTop: '5vh'}}
+      botDelay={3000}
       botAvatar={require('./assets/avatar.png')}
     />
   </ThemeProvider>
